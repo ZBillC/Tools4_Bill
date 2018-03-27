@@ -1,0 +1,56 @@
+h1 {
+	color:white; 
+	font-size:48px;
+	font-family:arial;
+	text-align:center;
+}
+
+body {background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521534088&di=4f45f9d08d0420d2ae1f31e7d55023f4&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F17%2F59%2F84%2F90s58PICeKq_1024.jpg);}
+
+.imgbcg1{
+	background-image: url();
+}
+.imgbcg{
+	background-image: url();
+}
+
+/*pai sheng xuanzeqi */
+div p{
+	color: white;
+	font-size: 24px;
+}
+/*lei xuanzeqi*/
+.par1a{
+	text-align: center;
+
+}
+
+.par1b{
+	background-color: #6495ED;
+}
+
+.par1c{
+	background-color: #FFB6C1;
+	padding: 0px;
+}
+
+.par1d{
+width: 600px; 
+height: 30px;
+position: 
+absolute; 
+left:50%; 
+top: 50%; 
+margin-left: -290px;
+margin-top: 430px;
+}
+
+.par1e{
+	border: #FFB6C1 solid thick;
+	outline:#FF00FF dotted thick;
+}
+
+.par1f{
+	border: #6495ED solid thick;
+	outline:#FF00FF dotted thick;
+}
