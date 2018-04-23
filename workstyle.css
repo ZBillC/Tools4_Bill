@@ -1,0 +1,368 @@
+*{
+	background-color: #F0F0F0;
+	margin:0px;
+	padding: 0px;
+	font-family: Arial;
+}
+#header{
+width:20%;
+height:100%;
+background-color:white;
+position:fixed;
+right:0px;
+z-index:1;
+	 }
+
+#logo{
+width:80%;
+height:auto;
+background-color:transparent;
+position:absolute;
+right:10%;
+top:2%;
+z-index: 2;
+	 }
+
+#nav{
+width:80%;
+height:80%;
+background-color:#E6E6E6;
+position:absolute;
+right:10%;
+top:40%;
+z-index: 3;
+font-family: Arial;
+	 }
+#nav ul{
+right:2%;
+width:16%;
+position:fixed;
+list-style: none;
+margin:auto;
+top:40%;
+background-color: transparent;
+}
+#nav ul li{
+width:100%;
+font-size: 30px;
+background-color:#E6E6E6;
+text-decoration: none;
+text-align:left;
+}
+
+#nav ul li a{
+right:0%;
+color:white;
+background-color:#E6E6E6; 
+text-decoration: none;
+text-align:left;
+/*padding-top: 2%;
+padding-left: 2%;*/
+
+}
+#nav ul li:hover{
+background-color: white;
+}
+
+#nav ul li:hover>a{
+	color:black;
+            background:white;
+        }
+/*#nav ul li a:hover{
+color:black;
+
+background-color:transparent;
+}*/
+
+
+
+#pagea{
+	position:absolute;
+	width:48%;
+	height:150%;
+	left:22%;
+	top:10%;
+	border-style:solid;
+    border-width:2px;
+    border-color: black;
+    color:black;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-style: none;
+	text-decoration-color: none;
+}
+
+#pageb{
+
+	display: -webkit-flex;
+    display: flex;
+	width:58%;
+	height:150%;
+/*	background-color:#E6E6E6;*/
+	position:absolute;
+	left:22%;
+	z-index:4;
+}
+#pageb1{
+	position:absolute;
+	width:58%;
+	height:250%;
+	left:22%;
+	top:10%;
+/*	border-style:solid;
+    border-width:2px;
+    border-color: black;*/
+    color:black;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-style: none;
+	text-decoration-color: none;
+}
+#pageb1 p{
+font-family: Didot;
+text-align: center;
+display: block;
+}
+#worktext{
+
+font-size: 9px;
+width:80%;
+left:0%;
+position: absolute;
+text-align: left;
+background-color:none;
+z-index: 10;
+top:2%;
+}
+#worktext p{
+text-align: left;
+
+}
+#worktext img{
+
+}
+
+#footerba{
+clear:both;
+visibility: visible;
+width:80%;
+height:auto;
+bottom:-300%;
+left:22%;
+text-align: left;
+text-decoration: none;
+text-decoration-style: none;
+text-decoration-color: none;
+font-family: Arial;
+position:absolute;
+float:left;
+z-index: 10;
+position:absolute;
+color:black;
+background-color: transparent;
+}
+
+
+
+
+#pagec{
+	display: -webkit-flex;
+    display: flex;
+	background-color:none;
+	position:absolute;
+	width:48%;
+	height:240%;
+	left:22%;
+	top:10%;
+	z-index:4;
+	display: block;
+/*	border-style:solid;
+    border-width:2px;
+    border-color: black;*/
+    color:black;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-style: none;
+	text-decoration-color: none;
+}
+
+
+
+
+
+
+
+#pageb img:hover{
+width:40%;
+z-index:10;
+}
+#img1{
+/*	animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;  Safari 与 Chrome 
+    -webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:5%;
+	left:5%;
+	z-index:2;
+}
+#img2{
+/*	animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:5%;
+	left:36%;
+	z-index:2;
+}
+#img3{
+/*	animation: myfirst 5s;
+    -webkit-animation: myfirst 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:5%;
+	right:5%;
+	z-index:2;
+}
+
+#img4{
+/*		animation: myfirst1 5s;
+    -webkit-animation: myfirst1 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:28%;
+	left:5%;
+	z-index:2;
+}
+#img5{
+/*		animation: myfirst1 5s;
+    -webkit-animation: myfirst1 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:28%;
+	left:36%;
+	z-index:2;
+}
+#img6{
+/*			animation: myfirst1 5s;
+    -webkit-animation: myfirst1 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:28%;
+	right:5%;
+	z-index:2;
+}
+#img7{
+/*			animation: myfirst2 5s;
+    -webkit-animation: myfirst2 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:51%;
+	left:5%;
+	z-index:2;
+}
+#img8{
+/*			animation: myfirst2 5s;
+    -webkit-animation: myfirst2 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:51%;
+	left:36%;
+	z-index:2;
+}
+#img9{
+/*			animation: myfirst2 5s;
+    -webkit-animation: myfirst2 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:51%;
+	right:5%;
+	z-index:2;
+}
+#img10{
+/*			animation: myfirst3 5s;
+    -webkit-animation: myfirst3 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:74%;
+	left:5%;
+	z-index:2;
+}
+#img11{
+/*			animation: myfirst3 5s;
+    -webkit-animation: myfirst3 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:74%;
+	left:36%;
+	z-index:2;
+}
+#img12{
+/*			animation: myfirst3 5s;
+    -webkit-animation: myfirst3 5s;  Safari 与 Chrome 
+	-webkit-animation-iteration-count:infinite;*/
+	width:28%;
+	height:auto;
+	background-color: white;
+	position:absolute;
+	top:74%;
+	right:5%;
+	z-index:2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

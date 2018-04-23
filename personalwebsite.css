@@ -96,7 +96,7 @@ background-color:transparent;
 }
 
 #pageb{
-	
+
 	display: -webkit-flex;
     display: flex;
 	width:58%;
@@ -106,6 +106,59 @@ background-color:transparent;
 	left:22%;
 	z-index:4;
 }
+#pageb1{
+	position:absolute;
+	width:48%;
+	height:150%;
+	left:22%;
+	top:10%;
+	border-style:solid;
+    border-width:2px;
+    border-color: black;
+    color:black;
+	text-align: left;
+	text-decoration: none;
+	text-decoration-style: none;
+	text-decoration-color: none;
+}
+#pageb1 p{
+font-family: Didot;
+text-align: center;
+display: block;
+}
+#worktext p{
+
+font-size: 9px;
+width:50%;
+left:25%;
+text-align: left;
+background-color:none;
+z-index: 10;
+position: absolute;
+top:2%;
+}
+#footerba{
+clear:both;
+visibility: visible;
+width:80%;
+height:auto;
+bottom:00%;
+left:22%;
+text-align: left;
+text-decoration: none;
+text-decoration-style: none;
+text-decoration-color: none;
+font-family: Arial;
+position:absolute;
+float:left;
+z-index: 10;
+position:absolute;
+color:black;
+background-color: transparent;
+}
+
+
+
 
 #pagec{
 	display: -webkit-flex;
@@ -144,7 +197,7 @@ top:2%;
 }
 #movierecord p{
 position: absolute;
-right:0%;
+right:-10%;
 top:2%;
 font-size: 9px;
 width:50%;
@@ -156,7 +209,7 @@ clear:both;
 visibility: visible;
 width:80%;
 height:auto;
-bottom:-200%;
+bottom:-400%;
 left:22%;
 text-align: left;
 text-decoration: none;
@@ -170,17 +223,9 @@ position:absolute;
 color:black;
 background-color: transparent;
 }
-#footer p{
-color:black;
-text-decoration: none;
-text-decoration: none;
-text-decoration-style: none;
-text-decoration-color: none;
-}
-#footer p a{
-color:black;
-text-decoration: none;
-}
+
+
+
 
 #paged{
 	background-color: none;
@@ -253,35 +298,21 @@ text-decoration: none;
 }
 
 
+#pageb div{
 
-/*@-webkit-keyframes myfirst /* Safari 与 Chrome 
-{
-    0%   {top:5%;}
-    99%  {top:-45%;}
-    100% {top:105%;}
+
+z-index: 2;
 }
-@-webkit-keyframes myfirst1 /* Safari 与 Chrome 
-{
-    0%   {top:28%;}
-    99%  {top:-22%;}
-    100% {top:128%;}
+#pageb div:hover{
+background-color:black; 
+filter:alpha(opacity=60);
+opacity: .6
+z-index:3;
 }
-@-webkit-keyframes myfirst2 /* Safari 与 Chrome 
-{
-    0%   {top:51%;}
-    99%  {top:1%;}
-    100% {top:151%;}
-}
-@-webkit-keyframes myfirst3 /* Safari 与 Chrome 
-{
-    0%   {top:74%;}
-    99%  {top:24%;}
-    100% {top:174%;}
-}
-*/
 #pageb img:hover{
 width:40%;
-z-index:10;
+z-index:3;
+
 }
 #img1{
 /*	animation: myfirst 5s;

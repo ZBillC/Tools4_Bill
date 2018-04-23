@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+
+        <script>
+var x=640;      //set the x coordinate of the circle
+var y=360;      // set the y coordinate of the circle      
+var r=0;       // set the radius to be 0 at first
+
+
+function drawFrame() {
+ window.requestAnimationFrame(drawFrame);
+
+ctx.clearRect(0,0,1500,900);                          //clean the screen
+ctx.strokeStyle="rgba(0,0,0,1)";                      //use black color full opacity
+ctx.beginPath();                  
+ctx.arc(x,y,r,0,Math.PI*2,true);                       // draw a circle path
+ctx.closePath();                                        
+ctx.stroke();                                          //stroke the path
+  
+ctx.beginPath();                                        //draw another circle
+ctx.arc(x,y,r+50,0,Math.PI*2,true);                        // draw a circle path
+ctx.closePath();
+ctx.stroke();                                             //stroke the path
+
+ctx.beginPath();                                        //draw a circle path	
+ctx.arc(x,y,r+100,0,Math.PI*2,true);
+ctx.closePath();                        
+ctx.stroke();                                       //stroke the path
+
+r=r+1;          //let the radius expand
+
+if(r>500){r=0;}     //if too big be small again
+}
+window.requestAnimationFrame(drawFrame);                 //loop function
+
+            Element.prototype.leftTopScreen = function () {
+                var x = this.offsetLeft;       
+                var y = this.offsetTop;
+
+                var element = this.offsetParent;              //define a element variable
+
+                while (element !== null) {                     //if the element exist
+                    x = parseInt (x) + parseInt (element.offsetLeft);   //get x coordinate of mouse
+                    y = parseInt (y) + parseInt (element.offsetTop);    //get y coordinate of mouse
+
+                    element = element.offsetParent;               //element get new meaning
+                }
+ 
+                return new Array (x, y);           //return to a new loop
+            }
+
+            document.addEventListener ("DOMContentLoaded", function () {      // listen to the mouse event
+                var flip = document.getElementById ("flip");       //name a flip variable and get its element
+
+                var xy = flip.leftTopScreen ();                 // start from the left top conor
+
+                var context = flip.getContext ("2d");         //paint in 2d
+ 
+ //get the mouse coordinate to paint
+                flip.addEventListener ("mousemove", function (event) {
+                    var x = event.clientX;                          
+                    var y = event.clientY;
+//using different color rectangle drops: black yellow  red and white
+context.fillStyle="rgba(22,8,7,1)";                  //use black color
+context.beginPath();
+context.rect(x+Math.random()*400-200,y+Math.random()*400-200,x+Math.random()*400-200,y+Math.random()*400-200);   //make a random shape rect path
+context.closePath();
+context.fill();                                 //fill the color
+
+context.fillStyle="rgba(244,186,61,1)";             //use yellow color
+context.beginPath();
+context.rect(x+Math.random()*800-400,y+Math.random()*800-400,20,x+Math.random()*800-400,y+Math.random()*800-400);//make a random shape rect path
+context.closePath();
+context.fill();               //fill the color
+
+context.fillStyle="rgba(220,47,13,1)";             //use red color
+context.beginPath();
+context.rect(x+Math.random()*600-300,y+Math.random()*600-300,15,x+Math.random()*600-300,y+Math.random()*600-300);//make a random shape rect path
+context.closePath();
+context.fill();               //fill the color
+
+context.fillStyle="rgba(255,250,210,1)";  //use white color
+context.beginPath();
+context.rect(x+Math.random()*400-200,y+Math.random()*400-200,30,x+Math.random()*400-200,y+Math.random()*400-200);//make a random shape rect path
+context.closePath();
+context.fill();               //fill the color
+                 
+                });
+            });  
+            
+  
+        </script>
+
+    </head>
+
+    <body>
+        <canvas id = "flip" width = "1500" height = "1500" style="border:1px solid black;background-color:#9a8d58">This text is displayed if your browser does not support HTML5 Canvas.</canvas>
+    </body>
+</html>
