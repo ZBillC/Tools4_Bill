@@ -264,6 +264,18 @@ margin-left:38%;
 margin-top: 5%;
 margin-bottom:5%; 
 }
+#qrcode{
+visibility:visible;
+width:25%;
+height:auto;
+margin-left:38%;
+position:absolute;
+left:0;
+top:2%;
+}
+#qrcode:hover{
+visibility:hidden;
+}
 
 
 
